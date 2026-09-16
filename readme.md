@@ -29,3 +29,24 @@ Basically it has virtual DOM. He decide when and where the UI updation happens.
   b. Assign priority to different types of works.
   c. Reuse previously completed work.
   d. Abort work if it is no longer needed.
+
+## Redux Toolkit (RTK)
+
+- Configure Store
+  export const store = configureStore({});
+- Create Reducers (Slices)
+  export const sliceName= createSlice({
+  name: "any name",
+  initialState: {
+  ...All initial states here
+  }
+  reducers: {
+  function1:(state, action)=>{},
+  function2:(state, action)=>{}
+  }
+  })
+- Export all reducer actions
+  export const {function1, function2}= sliceName.actions;
+- Export reducers
+  export default sliceName.reducer;
+- Define reducer in store
