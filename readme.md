@@ -50,3 +50,20 @@ Basically it has virtual DOM. He decide when and where the UI updation happens.
 - Export reducers
   export default sliceName.reducer;
 - Define reducer in store
+
+## HTML React Parser
+
+- Used to render the html response properly.
+- React can't directly render the HTML. We need to parse it.
+
+## Access env file in React
+
+- If created using Create React App
+  - Prefix : REACT_APP
+  - Sample : REACT_APP_VARIABLE_NAME="value"
+  - Access : process.env.REACT_APP_VARIABLE_NAME
+
+- If created using Create React App
+  - Prefix : VITE\_
+  - Sample : VITE_VARIABLE_NAME="value"
+  - Access : import.meta.env.VITE_VARIABLE_NAME
