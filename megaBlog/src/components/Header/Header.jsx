@@ -35,7 +35,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="py-3 shadow bg-gray-500">
+    <header className="py-3 shadow bg-white/80">
       <Container>
         <nav className="flex">
           <div className="mr-4">
@@ -44,13 +44,13 @@ export default function Header() {
             </Link>
           </div>
 
-          <ul className="flex ml-auto">
+          <ul className="flex gap-2 ml-auto">
             {navItems?.map((nav) =>
               nav.active ? (
                 <li key={nav.slug}>
                   <button
                     onClick={() => navigate(nav.slug)}
-                    className="inline-block px-6 py-2 text-white duration-200 hover:text-gray-800 hover:bg-blue-100 rounded-full"
+                    className="inline-block px-6 py-2 text-sm font-semibold text-gray/40 duration-200 hover:text-gray-800 hover:bg-blue-100 rounded-full"
                   >
                     {nav.name}
                   </button>

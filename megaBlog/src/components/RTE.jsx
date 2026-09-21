@@ -5,7 +5,11 @@ export default function RTE({ name, control, label, defailtValue = "" }) {
   return (
     <>
       <div className="w-full">
-        {label && <label className="inline-block mb-1 pl-1">{label}</label>}
+        {label && (
+          <label className="block mb-1 pl-1 text-sm font-semibold text-left">
+            {label}
+          </label>
+        )}
         <Controller
           name={name || "content"}
           control={control}
